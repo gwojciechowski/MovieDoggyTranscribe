@@ -1,6 +1,6 @@
 package app.moviedoggytranscribe.model.entity;
 
-public class Watcher {
+public class Watcher implements Entity {
 
     private Integer id;
     private String nick;
@@ -15,6 +15,7 @@ public class Watcher {
         this.surname = surname;
     }
 
+    @Override
     public Integer getId() {
         return id;
     }
