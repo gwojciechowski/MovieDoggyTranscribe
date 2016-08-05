@@ -11,7 +11,7 @@ public class ViewConstants {
     public static final String ADMIN_VIEW_ADD_STATUS_FILE_NAME = "adminAddStatusView.fxml";
 
 
-    public static final String MAIN_VIEW_TITLE = "Movie Doggy Transcribe - PSIARSKI ROZPIS";
+    public static final String MAIN_VIEW_TITLE = "Movie Doggy Transcribe";
     public static final String MOVIE_VIEW_TITLE = "PODGLĄD FILMU";
     public static final String MOVIE_ADD_VIEW_TITLE = "DODAJ NOWY FILM";
     public static final String ADMIN_VIEW_TITLE = "USTAWIENIA";

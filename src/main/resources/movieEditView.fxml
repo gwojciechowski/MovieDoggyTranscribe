@@ -29,7 +29,7 @@
                   <Insets left="20.0" />
                </GridPane.margin>
                <image>
-                  <Image url="@z13887137Q,Zapraszamy-na-kolejna-odslone-Obrazkow-Tygodnia--J.jpg" />
+                  <Image url="test.jpg" />
                </image>
                <effect>
                   <InnerShadow choke="0.35" color="#514949" height="54.39" radius="25.177500000000002" width="48.32" />
