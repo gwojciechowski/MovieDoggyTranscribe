@@ -3,9 +3,9 @@
 An application to create your own movie library. Add videos to your database and manage them! Determine their status, check who saw them too! The application uses an external API that allows you to download selected information collected throug the service FilmWeb.
 
 ### Screenshots:
-![Screen](https://raw.githubusercontent.com/gwojciechowski/MovieDoggyTranscribe/master/src/main/resources/views/screen.jpg)
+![Screen](https://raw.githubusercontent.com/gwojciechowski/MovieDoggyTranscribe/master/src/main/resources/screen.jpg)
 
-![Screen2](https://raw.githubusercontent.com/gwojciechowski/MovieDoggyTranscribe/master/src/main/resources/views/screen2.jpg)
+![Screen2](https://raw.githubusercontent.com/gwojciechowski/MovieDoggyTranscribe/master/src/main/resources/screen2.jpg)
 
 
 ### Technology:
