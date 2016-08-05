@@ -58,6 +58,18 @@ public class MovieAddViewController implements ControllerObserver {
 
     private List<Movie> movies;
 
+    private String title = "";
+    private String description = "";
+    private String coverUrl = "";
+    private String filmUrl = "";
+    private String genre = "";
+    private String year = "";
+    private Float rate = 0F;
+
+    private final String NO_DATA = "Brak";
+    private final String EMPTY_URL = "http://esensja.stopklatka.pl/obrazki/plakaty/0_brak-plakatu_200.jpg";
+    private final Float EMPTY_RATE = 0.0F;
+
     @PostConstruct
     @Override
     public void init() {
@@ -126,9 +138,16 @@ public class MovieAddViewController implements ControllerObserver {
                 return;
             }
 
-            simpleMovieService.add(new Movie(film.getTitle(), film.getDescription(), film.getCoverUrl().toString(),
-                    film.getFilmUrl().toString(), film.getGenre(), String.valueOf(film.getYear()),
-                    BigDecimal.valueOf(film.getRate()).setScale(2, BigDecimal.ROUND_HALF_UP).toString()));
+            title = (film.getTitle() == null) ? NO_DATA : film.getTitle();
+            description = (film.getDescription() == null) ? NO_DATA : film.getDescription();
+            coverUrl = (film.getCoverUrl() == null) ? EMPTY_URL : film.getCoverUrl().toString();
+            filmUrl = (film.getFilmUrl().toString() == null) ? NO_DATA : film.getFilmUrl().toString();
+            genre = (film.getGenre() == null) ? NO_DATA : film.getGenre();
+            year = (film.getYear() == null) ? NO_DATA : String.valueOf(film.getYear());
+            rate = (film.getRate() == null) ? EMPTY_RATE : film.getRate();
+
+            simpleMovieService.add(new Movie(title, description, coverUrl, filmUrl, genre, year,
+                    BigDecimal.valueOf(rate).setScale(2, BigDecimal.ROUND_HALF_UP).toString()));
 
             Stage stage = (Stage) addMovie.getScene().getWindow();
             stage.close();

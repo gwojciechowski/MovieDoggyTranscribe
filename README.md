@@ -39,6 +39,13 @@ Of course you can set the Run/Debug Configuration in your IDE. For example (Inte
 
 With clone you get a sample database file
 
+### ToDo:
+* Upgrade data of movies which are in database (new cover, actual rate),
+* Adding exceptions in several places of code,
+* Adding my rate function,
+* Fix bugs
+
+
 License
 ----
 MovieDoggyTranscribe is free software released under the MIT License.  
